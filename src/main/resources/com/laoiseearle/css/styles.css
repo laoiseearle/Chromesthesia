@@ -1,0 +1,9 @@
+#menuButton{
+    -fx-color: #FFFFFF;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+#menuButton:hover{
+    -fx-background-color: #424242;
+}

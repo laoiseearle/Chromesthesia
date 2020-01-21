@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.laoiseearle.Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="187.0" style="-fx-background-color: #212121; -fx-border-width: 0 3 0 0; -fx-border-color: #545454;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="menuButton" fx:id="staffNoteNamesBtn" alignment="CENTER" layoutY="200.0" mnemonicParsing="false" onAction="#toggleStaffNoteNames" prefHeight="100.0" prefWidth="184.0" style="-fx-border-width: 1 0 1 0; -fx-border-color: #545454 #545454;" stylesheets="@css/styles.css" text="Staff Names: OFF" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font></Button>
+            <Button id="menuButton" fx:id="pianoColoursBtn" alignment="CENTER" layoutY="400.0" mnemonicParsing="false" onAction="#toggleColours" prefHeight="100.0" prefWidth="184.0" style="-fx-border-width: 1 0 1 0; -fx-border-color: #545454 #545454;" stylesheets="@css/styles.css" text="Colours: OFF" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button id="menuButton" fx:id="startBtn" alignment="CENTER" mnemonicParsing="false" onAction="#toggleStartStop" prefHeight="100.0" prefWidth="184.0" style="-fx-border-color: #545454 #545454 #545454 #545454; -fx-border-width: 0 0 1 0;" stylesheets="@css/styles.css" text="START" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button id="menuButton" fx:id="clefBtn" alignment="CENTER" layoutY="100.0" mnemonicParsing="false" onAction="#toggleClef" prefHeight="100.0" prefWidth="184.0" style="-fx-border-width: 1 0 1 0; -fx-border-color: #545454 #545454 #545454 #545454;" stylesheets="@css/styles.css" text="Clef: TREBLE" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button id="menuButton" fx:id="pianoKeyNamesBtn" alignment="CENTER" layoutY="300.0" mnemonicParsing="false" onAction="#togglePianoKeyNames" prefHeight="100.0" prefWidth="184.0" style="-fx-border-width: 1 0 1 0; -fx-border-color: #545454 #545454;" stylesheets="@css/styles.css" text="Piano Names: OFF" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button id="menuButton" fx:id="flatButton" alignment="CENTER" layoutY="500.0" mnemonicParsing="false" onAction="#toggleFlats" prefHeight="100.0" prefWidth="184.0" style="-fx-border-width: 1 0 0 0; -fx-border-color: #545454 #545454;" stylesheets="@css/styles.css" text="Flat Notes: OFF" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="187.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="616.0" style="-fx-background-color: #101010;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="15.0" arcWidth="10.0" fill="#212121" height="202.0" layoutX="438.0" layoutY="46.0" stroke="#545454" strokeLineJoin="BEVEL" strokeType="OUTSIDE" width="158.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect></Rectangle>
+            <Rectangle arcHeight="15.0" arcWidth="10.0" fill="#212121" height="202.0" layoutX="23.0" layoutY="46.0" stroke="#545454" strokeLineJoin="BEVEL" strokeType="OUTSIDE" width="382.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect></Rectangle>
+            <Rectangle arcHeight="15.0" arcWidth="10.0" fill="#212121" height="280.0" layoutX="23.0" layoutY="280.0" stroke="#545454" strokeLineJoin="BEVEL" strokeType="OUTSIDE" width="572.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect></Rectangle>
+            <ImageView fitHeight="292.0" fitWidth="553.0" layoutX="32.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Piano.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pianoColoursImage" fitHeight="292.0" fitWidth="553.0" layoutX="32.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/PianoColours.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pianoKeyNamesImage" fitHeight="292.0" fitWidth="553.0" layoutX="32.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/PianoKeyNames.png" />
+               </image>
+            </ImageView>
+            <Rectangle fill="WHITE" height="184.0" layoutX="31.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="8.0" width="366.0" />
+            <ImageView blendMode="SRC_ATOP" fitHeight="184.0" fitWidth="441.0" layoutX="-10.0" layoutY="55.0" preserveRatio="true">
+               <image>
+                  <Image url="@images/Staff.png" />
+               </image>
+            </ImageView>
+            <Rectangle fill="WHITE" height="184.0" layoutX="444.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="8.0" width="146.0" />
+            <Label fx:id="incorrectGuessCountLbl" contentDisplay="CENTER" layoutX="479.0" layoutY="180.0" prefHeight="19.0" prefWidth="54.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="correctGuessCountLbl" contentDisplay="CENTER" layoutX="479.0" layoutY="137.0" prefHeight="19.0" prefWidth="55.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="guessPercentageLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="82.0" prefHeight="38.0" prefWidth="72.0" text="0%" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="trebleClefImage" fitHeight="199.0" fitWidth="407.0" layoutX="-8.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Treble.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="noteNamesLbl" alignment="CENTER" layoutX="129.0" layoutY="209.0" prefHeight="16.0" prefWidth="187.0" text="Press the Start Button!" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font></Label>
+            <Group layoutX="-1.0" layoutY="29.0">
+               <children>
+                  <Button id="C" layoutX="45.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="244.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="D" layoutX="121.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="244.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="E" layoutX="196.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="244.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="F" layoutX="272.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="244.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="G" layoutX="348.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="244.0" prefWidth="77.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="A" layoutX="425.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="244.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="B" layoutX="497.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="244.0" prefWidth="76.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="Db" layoutX="90.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="147.0" prefWidth="61.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="Eb" layoutX="168.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="147.0" prefWidth="61.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="Gb" layoutX="319.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="147.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="Bb" layoutX="471.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="147.0" prefWidth="61.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="Ab" layoutX="395.0" layoutY="269.0" mnemonicParsing="false" onAction="#pianoKeyPressed" prefHeight="148.0" prefWidth="61.0" style="-fx-background-color: transparent;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Group>
+            <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="536.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Incorrect.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ledgerLineImage" fitHeight="25.0" fitWidth="72.0" layoutX="193.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/Ledger.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="536.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Correct.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bassClefImage" fitHeight="63.0" fitWidth="62.0" layoutX="61.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/Bass.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="flatImage" fitHeight="63.0" fitWidth="160.0" layoutX="113.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/Flat.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="noteImage" fitHeight="77.0" fitWidth="184.0" layoutX="132.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" visible="false">
+               <image>
+                  <Image url="@images/noteBlack.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
